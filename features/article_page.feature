@@ -9,4 +9,4 @@ Feature: An article has comments
      | Mucho gracias | The hole new world of mucho gracias |
 
   Scenario: Create a new comment for the article
-    Given I visit the 'Mucho gracias' article page
+    Given I visit the "Mucho gracias" article page
