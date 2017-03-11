@@ -4,7 +4,7 @@ Feature: An article has comments
   I would like to see comments for the article.
 
   Background:
-    Given the following article exists
+    Given the following article exists on our site
      | title         | content                             |
      | Mucho gracias | The hole new world of mucho gracias |
 
