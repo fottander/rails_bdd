@@ -3,3 +3,8 @@ Given(/^the following article exists on our site$/) do |table|
     FactoryGirl.create(:article, hash)
   end
 end
+
+Given(/^I visit the "([^"]*)" article page$/) do |article_title|
+  article = Article.where(title: article_title).first
+  visit article_path(article)
+end
