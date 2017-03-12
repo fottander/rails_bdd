@@ -14,3 +14,6 @@ Feature: An article has comments
     And I shouldn´t see "Mucho gracias´s comments"
     When I click on "Add comment"
     Then I should see "New comment for Mucho gracias"
+    When I fill in "Email" with "felix@telia.com"
+    And I fill in "Comment" with "This article makes no sense"
+    
