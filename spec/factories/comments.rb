@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :comment do
-    email ""
+    email "MyEmail"
     comment "MyText"
-    article nil
+    article 
   end
 end
