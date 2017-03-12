@@ -18,3 +18,4 @@ Feature: An article has comments
     And I fill in "Comment" with "This article makes no sense"
     And I click "Submit"
     Then I should be on "Mucho gracias" article page
+    And I should see "Mucho gracias´s comments"
