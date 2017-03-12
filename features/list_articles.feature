@@ -4,7 +4,7 @@ Feature: List articles on landing page
   I would like to see a list of articles
 
   Background:
-    Given the following article exists 
+    Given the following article exists
      | title                | content                            |
      | A breaking news item | Some really breaking action        |
      | Learn Rails 5        | Build awesome rails applications   |
@@ -15,3 +15,5 @@ Feature: List articles on landing page
     And I should see "Some really breaking action"
     And I should see "Learn Rails 5"
     And I should see "Build awesome rails applications"
+    When I click on "Comment on article"
+    Then I should see "Mucho gracias" and publishing date "2016-05-24"
