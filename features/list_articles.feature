@@ -15,5 +15,4 @@ Feature: List articles on landing page
     And I should see "Some really breaking action"
     And I should see "Learn Rails 5"
     And I should see "Build awesome rails applications"
-    When I click on "Comment on article"
-    Then I should see "Mucho gracias" and publishing date "2016-05-24"
+  
