@@ -7,3 +7,12 @@
   </li>
   <% end %>
 </ul>
+<p>Comments for this article</p>
+<ul>
+  <% @comments.each do |comment| %>
+  <li>
+    <%= comment.comment %><br />
+    <%= comment.email %>
+  </li>
+  <% end %>
+</ul>
