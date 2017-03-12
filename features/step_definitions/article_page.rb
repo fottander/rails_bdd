@@ -17,6 +17,6 @@ Then(/^I shouldn´t see "([^"]*)"$/) do |content|
   expect(page).not_to have_content content
 end
 
-When(/^I click on "([^"]*)"$/) do |button|
-  click_button button
+When(/^I click on "([^"]*)"$/) do |link_text|
+  find_link(link_text).click
 end
