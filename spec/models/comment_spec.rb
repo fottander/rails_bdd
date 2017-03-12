@@ -10,6 +10,10 @@ RSpec.describe Comment, type: :model do
     it { is_expected.to belong_to :article }
   end
 
+  describe 'Validations' do
+    it { is_expected.to validate_presence_of :comment }
+  end
+
   describe 'Comment Factory' do
     it 'Should have valid Factory' do
       expect(FactoryGirl.create(:comment)).to be_valid
