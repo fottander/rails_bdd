@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   root controller: :landing, action: :index
 
   resources :articles, only: [:show] do
-    resources :comments, only: [:new]
+    resources :comments
   end
 end
