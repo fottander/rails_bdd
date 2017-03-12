@@ -13,4 +13,4 @@ Feature: An article has comments
     Then I should see "Mucho gracias" and publishing date "2016-05-24"
     And I shouldn´t see "Mucho gracias´s comments"
     When I click on "Add comment"
-    Then I should see "New comment for Mucho Gracias"
+    Then I should see "New comment for Mucho gracias"
