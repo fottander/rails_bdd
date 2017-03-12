@@ -12,3 +12,7 @@ end
 Then(/^I should see "([^"]*)" and publishing date "([^"]*)"$/) do |content, date|
   expect(page).to have_content and date
 end
+
+Then(/^I shouldn´t see "([^"]*)"$/) do |content|
+  expect(page).not_to have_content content
+end

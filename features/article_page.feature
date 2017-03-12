@@ -11,4 +11,4 @@ Feature: An article has comments
   Scenario: Create a new comment for the article
     Given I visit the "Mucho gracias" article page
     Then I should see "Mucho gracias" and publishing date "2016-05-24"
-    And i shouldn´t see "Mucho gracias´s comments"
+    And I shouldn´t see "Mucho gracias´s comments"
