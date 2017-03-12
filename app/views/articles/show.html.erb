@@ -7,7 +7,7 @@
 
   <ul>
     <% @article.comment.each do |comment| %>
-      <li><%= @article.title %></li>
+      <li><%= comment.comment %></li>
     <% end %>
   </ul>
 <% end %>
