@@ -8,6 +8,7 @@
   <ul>
     <% @article.comment.each do |comment| %>
       <li><%= comment.comment %></li>
+      <li><%= comment.email %></li>
     <% end %>
   </ul>
 <% end %>
