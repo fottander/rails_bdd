@@ -9,7 +9,8 @@ Feature: An article has comments
      | Mucho gracias | The hole new world of mucho gracias |
 
   Scenario: Create a new comment for the article
-    Given I visit the "Mucho gracias" article page
+    Given I am on the landing page
+    And I click "Mucho gracias"
     Then I should see "Mucho gracias" and publishing date "2016-05-24"
     And I shouldn´t see "Mucho gracias´s comments"
     When I click on "Add comment"
