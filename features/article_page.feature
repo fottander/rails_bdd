@@ -1,7 +1,7 @@
 Feature: An article has comments
-  As a visitor,
-  when I visit the specific articles page,
-  I would like to see comments for the article.
+  As a visitor
+  In order to comment on an article
+  I would like to see the article´s comment on landing page
 
   Background:
     Given the following article exists on our site
@@ -22,3 +22,5 @@ Feature: An article has comments
     And I should see "Mucho gracias´s comments"
     And I should see "This article makes no sense"
     And I should see "felix@telia.com"
+    Given I am on the landing page
+    Then I should see "This article makes no sense"
