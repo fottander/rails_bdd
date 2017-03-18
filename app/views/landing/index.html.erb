@@ -3,16 +3,7 @@
   <% @articles.each do |article| %>
   <li>
     <%= article.title %><br />
-    <%= article.content %>
-  </li>
-  <% end %>
-</ul>
-<p>Comments for this article</p>
-<ul>
-  <% @comments.each do |comment| %>
-  <li>
-    <%= comment.comment %><br />
-    <%= comment.email %>
+    <%= article.content %><br />
   </li>
   <% end %>
 </ul>

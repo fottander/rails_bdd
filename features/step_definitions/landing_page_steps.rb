@@ -11,3 +11,7 @@ Given(/^the following article exists$/) do |table|
     Article.create(hash)
   end
 end
+
+Then(/^I should see "([^"]*)" link$/) do |link|
+  expect(page).to have_link link
+end

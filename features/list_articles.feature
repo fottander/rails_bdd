@@ -16,3 +16,4 @@ Feature: List articles on landing page
     And I should see "Learn Rails 5"
     And I should see "Build awesome rails applications"
     And I should see "Comments for this article"
+    And I should see "Learn Rails 5" link
