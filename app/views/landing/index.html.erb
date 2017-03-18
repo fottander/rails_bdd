@@ -3,8 +3,12 @@
   <% @articles.each do |article| %>
   <li>
     <%= link_to article.title , article_path(article) %><br />
-    <%= article.content %><br />
-    <p>Comments for this article</p><br />
+    <%= article.content %>
+    <p>Comments for this article</p>
+    <% article.comment.each do |cont| %>
+    <%= cont.comment %><br />
+    <%= cont.email %><br />
+    <% end %><br />
   </li>
   <% end %>
 </ul>
