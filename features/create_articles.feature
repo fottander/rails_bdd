@@ -7,6 +7,7 @@ Feature: Create articles
     Given I am on the landing page
     And I click "Publish article"
     Then I should see "Publish your own article"
-    When I fill in "Subject" with "Fillingar"
+    When I fill in "Title" with "Fillingar"
     And I fill in "Content" with "This is the wonderful world of Fillingar"
+    And I fill in "Author" with "Felix"
     And I click "Submit"

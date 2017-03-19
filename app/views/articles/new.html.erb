@@ -1,1 +1,10 @@
 <h2>Publish your own article</h2>
+<%= form_for Article.new do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+  <%= f.label :author %>
+  <%= f.text_field :author %>
+  <%= f.submit 'Submit' %>
+<% end %>
