@@ -1,0 +1,9 @@
+<h2> New comment for <%= @article.title %></h2>
+
+<%= form_for [@article, @comment] do |f| %>
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+  <%= f.label :comment %>
+  <%= f.text_field :comment %>
+  <%= f.submit 'Submit' %>
+<% end %>

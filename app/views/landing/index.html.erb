@@ -1,2 +1,16 @@
-<p>A breaking news item</p>
-<p>Some really breaking action</p>
+<h1>Our Articles</h1>
+<%= link_to "Publish article" , new_article_path %>
+<ul>
+  <% @articles.each do |article| %>
+  <li>
+    <%= link_to article.title , article_path(article) %><br />
+    <%= article.content %>
+    <p>Written by <%= article.author %> at <%= article.created_at.strftime("%Y-%m-%d") %></p>
+    <p>Comments for this article</p>
+    <% article.comment.each do |cont| %>
+    <%= cont.comment %><br />
+    <%= cont.email %><br />
+    <% end %><br />
+  </li>
+  <% end %>
+</ul>
